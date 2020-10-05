@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Web;
+using System.Web.Configuration;
 using iText.Forms.Xfdf;
 using iText.Kernel.Font;
 using iText.Kernel.Geom;
@@ -16,6 +17,16 @@ using iText.Kernel.Pdf.Canvas.Parser.Listener;
 namespace DzX_PDFParser.PDFParser
 {
 
+    public class LicenseCertificate
+    {
+        public string CSN;
+        public string CertDate;
+        public string Customer;
+        public string Software;
+        public string Serial;
+        public string ContactEmail;
+
+    }
     public static class PDFExtract
     {
 
@@ -59,16 +70,27 @@ namespace DzX_PDFParser.PDFParser
         }
 
     }
-    public static class PDFParser
+    public class PDFParser
     {
-        public static readonly String SRC = "E:/LicenseCertificate.pdf";
-        public static String[] ManipulatePdf()
+        string TempFile = WebConfigurationManager.AppSettings["TempFileLoc"];
+        // public  readonly String SRC = TempFile;
+        public string[] ManipulatePdf()
         {
-            PdfDocument pdfDoc = new PdfDocument(new PdfReader(SRC));
-            Rectangle rect = new Rectangle(135, 685, 150, 25);
-            Rectangle rect2 = new Rectangle(410, 685, 150, 25);
-            Rectangle[] rectArray = new Rectangle[] { rect ,rect2};
-            return PDFExtract.ExtractText(pdfDoc.GetFirstPage(),rectArray);
+            PdfDocument pdfDoc = new PdfDocument(new PdfReader(TempFile));
+            Rectangle rect_CSN = new Rectangle(135, 685, 150, 25);
+            Rectangle rect_CertDate = new Rectangle(410, 685, 150, 25);
+            Rectangle rect_Customer = new Rectangle(135, 657, 150, 15);
+            Rectangle rect_Software = new Rectangle(130, 500, 150, 25);
+            Rectangle rect_Serial = new Rectangle(130, 457, 150, 25);
+            Rectangle rect_ContactEmail = new Rectangle(130, 313, 150, 25);
+            Rectangle[] rectArray = new Rectangle[] { rect_CSN, rect_CertDate, rect_Customer, rect_Software, rect_Serial, rect_ContactEmail };
+            return PDFExtract.ExtractText(pdfDoc.GetFirstPage(), rectArray);
+        }
+        public void Delete()
+        {
+            System.GC.Collect();
+            System.GC.WaitForPendingFinalizers();
+            File.Delete(TempFile);
         }
     }
 }

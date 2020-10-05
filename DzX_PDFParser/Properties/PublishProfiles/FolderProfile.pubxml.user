@@ -76,11 +76,59 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/Antlr3.Runtime.pdb">
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>10/05/2020 21:50:41</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>10/05/2020 21:50:41</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>02/08/2019 01:50:10</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.dll">
+      <publishTime>08/16/2017 06:51:46</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.pdb">
+      <publishTime>08/16/2017 06:51:46</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.dll">
+      <publishTime>08/16/2017 06:51:42</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.pdb">
+      <publishTime>08/16/2017 06:51:42</publishTime>
+    </File>
     <File Include="bin/DzX_PDFParser.dll">
-      <publishTime>10/05/2020 11:20:13</publishTime>
+      <publishTime>10/05/2020 21:50:38</publishTime>
     </File>
     <File Include="bin/DzX_PDFParser.pdb">
-      <publishTime>10/05/2020 11:20:13</publishTime>
+      <publishTime>10/05/2020 21:50:38</publishTime>
+    </File>
+    <File Include="bin/itext.barcodes.dll">
+      <publishTime>07/21/2020 09:04:46</publishTime>
+    </File>
+    <File Include="bin/itext.forms.dll">
+      <publishTime>07/21/2020 09:04:48</publishTime>
+    </File>
+    <File Include="bin/itext.io.dll">
+      <publishTime>07/21/2020 09:04:38</publishTime>
+    </File>
+    <File Include="bin/itext.kernel.dll">
+      <publishTime>07/21/2020 09:04:42</publishTime>
+    </File>
+    <File Include="bin/itext.layout.dll">
+      <publishTime>07/21/2020 09:04:48</publishTime>
+    </File>
+    <File Include="bin/itext.pdfa.dll">
+      <publishTime>07/21/2020 09:04:46</publishTime>
+    </File>
+    <File Include="bin/itext.sign.dll">
+      <publishTime>07/21/2020 09:04:54</publishTime>
+    </File>
+    <File Include="bin/itext.styledxmlparser.dll">
+      <publishTime>07/21/2020 09:04:48</publishTime>
+    </File>
+    <File Include="bin/itext.svg.dll">
+      <publishTime>07/21/2020 09:04:50</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>07/08/2020 21:52:58</publishTime>
@@ -257,7 +305,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2018 12:04:24</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>11/28/2018 12:01:00</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>11/28/2018 12:02:56</publishTime>
@@ -331,6 +379,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Global.asax">
       <publishTime>10/01/2020 10:47:23</publishTime>
     </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>10/05/2020 21:50:39</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>10/01/2020 10:47:28</publishTime>
     </File>
@@ -374,7 +425,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/01/2020 10:47:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/10/2020 11:07:58</publishTime>
+      <publishTime>10/05/2020 20:10:16</publishTime>
     </File>
   </ItemGroup>
 </Project>

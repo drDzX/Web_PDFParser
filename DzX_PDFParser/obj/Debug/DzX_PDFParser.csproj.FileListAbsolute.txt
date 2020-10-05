@@ -112,7 +112,6 @@ E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\System.Web.WebPages.xml
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\System.Web.WebPages.Deployment.xml
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\System.Web.WebPages.Razor.xml
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\Antlr3.Runtime.pdb
-E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\obj\Debug\DzX_PDFParser.csprojAssemblyReference.cache
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\obj\Debug\DzX_PDFParser.csproj.CoreCompileInputs.cache
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\obj\Debug\DzX_PDFParser.csproj.CopyComplete
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\obj\Debug\DzX_PDFParser.dll
@@ -143,3 +142,4 @@ E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\itext.pdfa.xml
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\itext.sign.xml
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\itext.styledxmlparser.xml
 E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\bin\itext.svg.xml
+E:\Dezex\Projects\Web_PDFParser\DzX_PDFParser\obj\Debug\DzX_PDFParser.csprojAssemblyReference.cache

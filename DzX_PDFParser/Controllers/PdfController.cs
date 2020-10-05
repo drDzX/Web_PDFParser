@@ -1,20 +1,31 @@
 ﻿using DzX_PDFParser.PDFParser;
-using iText.Kernel.Geom;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web.Configuration;
 using System.Web.Http;
 
 namespace DzX_PDFParser.Controllers
 {
     public class PdfController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        // GET api/pdf
+        public LicenseCertificate Get()
         {
-            return  PDFParser.PDFParser.ManipulatePdf();
+            LicenseCertificate Lic = new LicenseCertificate();
+            PDFParser.PDFParser Parser = new PDFParser.PDFParser();
+            Lic.CSN = Parser.ManipulatePdf()[0];
+            Lic.CertDate = Parser.ManipulatePdf()[1];
+            Lic.Customer = Parser.ManipulatePdf()[2]; 
+            Lic.Software = Parser.ManipulatePdf()[3]; 
+            Lic.Serial = Parser.ManipulatePdf()[4]; 
+            Lic.ContactEmail = Parser.ManipulatePdf()[5]; 
+
+            Parser.Delete();
+            return Lic;
         }
 
     }

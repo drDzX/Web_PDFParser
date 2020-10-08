@@ -12,7 +12,7 @@ namespace DzX_PDFParser.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "Igor", "Igor2" };
+            return new string[] { "Ako ovo radi znaci da si ti car :) ! "};
         }
 
         // GET api/values/5
